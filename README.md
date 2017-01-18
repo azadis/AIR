@@ -78,26 +78,28 @@ If want to train only one classifier at each time, you can set "par_finished = 1
 ---------------------------------------------------------------------
 										Instruction to run the code
 ---------------------------------------------------------------------
+
 1. Fill all lines with the correct directory path in "SADMM_normalized.m" as well as
 "deep_reg_multiclass.m" or "deep_classification_onevsall_nus.m".
 
-The extracted deep feature vectors should be saved as '.h5' files under their own category directory
-as 'calDir/train/specific_category/'. We extracted FC_7 features from AlexNet for all images.
+	The extracted deep feature vectors should be saved as '.h5' files under their own category directory
+	as 'calDir/train/specific_category/'. We extracted FC_7 features from AlexNet for all images.
 
-calDir : includes extracted features (.h5) in subdirectories of "calDir/train/class_name_i" and "calDir/test/class_name_i";Read both train and validation data from this directory
-For CIFAR10 features should be saved in subdirs  "calDir/data_batch_i/class_name_i" and
-"test/class_name_i"
+	calDir : includes extracted features (.h5) in subdirectories of "calDir/train/class_name_i" and "calDir/test/class_name_i";Read both train and validation data from this directory
+	For CIFAR10 features should be saved in subdirs  "calDir/data_batch_i/class_name_i" and
+	"test/class_name_i"
 
-caffeDir : includes the original png images; only the path name is needed to produce
-a txt file including images as a list
+	caffeDir : includes the original png images; only the path name is needed to produce
+	a txt file including images as a list
 
-dataDir: the path to save the model weights 
+	dataDir: the path to save the model weights 
 
-outDir: the path to save the final result
+	outDir: the path to save the final result
 
-paramDir: the path to save the parameters
+	paramDir: the path to save the parameters
 
-For NUS_WIDE_LITE dataset, the images are read based on the txt file in the NUS_LITE_data directory.
+	For NUS_WIDE_LITE dataset, the images are read based on the txt file in the NUS_LITE_data directory.
+
 2. Start MATLAB and run the VLFeat setup command:
 vlfeat-0.9.19/toolbox/vl_setup
 

@@ -98,7 +98,6 @@ outDir: the path to save the final result
 paramDir: the path to save the parameters
 
 For NUS_WIDE_LITE dataset, the images are read based on the txt file in the NUS_LITE_data directory.
-
 2. Start MATLAB and run the VLFeat setup command:
 vlfeat-0.9.19/toolbox/vl_setup
 
